@@ -316,7 +316,7 @@ p {
   transform: translate(-50%, -50%);
   animation: bounceIn 1s ease forwards;
   border-radius: 20px;
-  border: none;
+  border: 2px solid #fff;
   padding: 20px;
   overflow-y: auto; /* Habilita rolagem interna se o conteúdo exceder a altura */
   z-index: 999;
@@ -337,6 +337,7 @@ h4 {
   height: auto; 
   margin: 10px 0; 
   border-radius: 15px;
+  border: 2px solid #fff;
 }
 
 button.fechar {
