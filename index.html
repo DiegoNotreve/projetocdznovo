@@ -3,18 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/estilos.css" />
     <title>
-      House of the Dragon - Semana do zero ao programador contratado
+      Cavaleiros de Ouro
     </title>
   </head>
 
   <body>
     <main>
-      	<audio id="background-audio" loop>
+      	<!-- <audio id="background-audio" loop> -->
 			<source src="./src/song/ENCERRAMENTO - CDZ - Saga do Santuário - PT-BR - Cavaleiros do Zodíaco.mp3" type="audio/mpeg" />
 		</audio>
 
@@ -358,123 +361,252 @@
     <div class="titulo-timeline">
     <h2>Grandes feitos de cada cavaleiro de ouro</h2>
   </div>
-		<div class="event">
+		<div class="event" data-modal-id="modal1">
 			<div class="content">
 				<h3>Mu de Áries</h3>
-				<p>Restauração das Armaduras de Bronze.</p>
-				<p>Defesa da Casa de Áries com a Muralha de Cristal.</p>
-        <button>clickado</button>
+				<p>- Restauração das Armaduras de Bronze.</p>
+				<p>- Defesa da Casa de Áries com a Muralha de Cristal.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1986</div>
+
+      <div id="modal1" class="modal hidden">
+        <h4>Restauração das armaduras de bronze, com ajuda de outros cavaleiros.</h4>
+        <img class="img-modal" src="src/imagens/popovers/mu.png" alt="conserto das armaduras">
+        <h4 class="titulo2">Defesa da casa de Áries contra espectros de hades.</h4>
+        <img class="img-modal" src="src/imagens/popovers/mu2.gif" alt="gif de crystal">
+        <button class="fechar">Fechar</button>
+      </div>
+
+
 		</div>
-		<div class="event">
+		<div class="event" data-modal-id="modal2">
 			<div class="content">
 				<h3>Aldebaran de Touro</h3>
-				<p>Batalha contra Seiya e Defesa do Santuário.</p>
-				<p>Aldebaran usa o Grande Chifre para resistir bravamente contra ataques poderosos.</p>
+				<p>- Batalha contra Seiya e Defesa do Santuário.</p>
+				<p>- Usa Grande Chifre para resistir contra ataques.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1986</div>
 		</div>
-		<div class="event">
+    <div id="modal2" class="modal hidden">
+      <h4>Batalha contra Seiya e Defesa do Santuário.</h4>
+      <img class="img-modal" src="https://www.animeclick.it/immagini/news/bSaint_Seiya_Saintia_Shob_Recensione_anime/gallery_original/bSaint_Seiya_Saintia_Shob_Recensione_anime-5cf2dadfd4136.png" alt="conserto das armaduras">
+      <h4 class="titulo2">Usa Grande Chifre para resistir contra ataques.</h4>
+      <img class="img-modal" src="https://pa1.aminoapps.com/6650/d067e89867598a5e2fdba668b1b024cc0489527a_hq.gif" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+
+
+
+		<div class="event" data-modal-id="modal3">
 			<div class="content">
 				<h3>Saga de gêmeos</h3>
-        <p>Manipulação e usurpação do trono do Santuário.</p>
-        <p>Confronto final contra Atena e Seiya.</p>
+        <p>- Manipulação e usurpação do trono do Santuário.</p>
+        <p>- Confronto final contra Atena e Seiya.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year"> Ano 1973-1986</div>
 		</div>
-		<div class="event">
+
+    <div id="modal3" class="modal hidden">
+      <h4>Manipulação e usurpação do trono do Santuário.</h4>
+      <img class="img-modal" src="https://www.einerd.com.br/wp-content/uploads/2016/01/Saga_mata_ares.jpg" alt="conserto das armaduras">
+      <h4 class="titulo2">Confronto final contra Atena e Seiya.</h4>
+      <img class="img-modal" src="src/imagens/popovers/sagavsatena.png" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+
+		<div class="event" data-modal-id="modal4">
 			<div class="content">
 				<h3> Máscara da Morte de Câncer</h3>
-				<p>Controle do Sekishiki (a passagem para o mundo dos mortos).</p>
-				<p>Retorno à luta na Saga de Hades, apesar de ser expulso por Atena.</p>
+				<p>- Controle da passagem para o mundo dos mortos.</p>
+				<p>- Combate contra Shiryu na casa de câncer.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1990</div>
 		</div>
-		<div class="event">
+    <div id="modal4" class="modal hidden">
+      <h4>Controle da passagem para o mundo dos mortos.</h4>
+      <img class="img-modal" src="https://i.ytimg.com/vi/y6y5e_wkXe4/maxresdefault.jpg" alt="conserto das armaduras">
+      <h4 class="titulo2">Combate contra Shiryu na casa de câncer.</h4>
+      <img class="img-modal" src="https://64.media.tumblr.com/49d0a1c2ecccf1e85348dcd50c329638/tumblr_nry68hfkc81uvdnoto1_500.gifv" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+
+		<div class="event" data-modal-id="modal5">
 			<div class="content">
 				<h3>Aiolia de Leão</h3>
-				<p>Golpe devastador Relâmpago de Plasma, derrotando diversos inimigos.</p>
-				<p>Luta épica contra os Espectros de Hades.</p>
+				<p>- Golpe devastador Relâmpago de Plasma.</p>
+				<p>- Luta épica contra os Espectros de Hades.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1990</div>
 		</div>
-		<div class="event">
+    <div id="modal5" class="modal hidden">
+      <h4>Luta épica contra os Espectros de Hades.</h4>
+      <img class="img-modal" src="https://pa1.aminoapps.com/6898/2e9ff4ea406c31109b257d721a740b473cbf37a0r1-240-320_00.gif" alt="conserto das armaduras">
+      <h4 class="titulo2">Golpe devastador Relâmpago de Plasma.</h4>
+      <img class="img-modal" src="https://img.wattpad.com/62cbcdfa9f214b4347403bb08128bead857b5f7d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6f5564497776757033645f5670413d3d2d313031313532363438382e313635616133636336656130353931613332393533313633373830332e676966?s=fit&w=720&h=720" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+
+
+		<div class="event" data-modal-id="modal6">
 			<div class="content">
 				<h3>Shaka de Virgem</h3>
-				<p>Confronto contra os Espectros de Hades.</p>
-				<p>Domínio absoluto do Tesouro do Céu, sendo um dos mais poderosos Cavaleiros de Ouro.</p>
+				<p>- Confronto contra Saga, Shura e Camus.</p>
+				<p>- Domínio absoluto do Tesouro do Céu.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1990</div>
 		</div>
-		<div class="event">
+    <div id="modal6" class="modal hidden">
+      <h4>Confronto contra Saga, Shura e Camus.</h4>
+      <img class="img-modal" src="https://images6.alphacoders.com/680/thumb-1920-680869.png" alt="conserto das armaduras">
+      <h4 class="titulo2">Domínio absoluto do Tesouro do Céu.</h4>
+      <img class="img-modal" src="https://media.tenor.com/pWV-9eEJ8jAAAAAd/shaka-de-virgo-virgo-shaka.gif" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+   
+		<div class="event" data-modal-id="modal7">
 			<div class="content">
 				<h3>Dohko de Libra</h3>
-				<p>Batalha contra o Imperador Hades e suas forças.</p>
-				<p> Mantenedor da vigília dos Selos de Atena por 243 anos.</p>
+				<p>- Guardião dos 5 picos de Rozan.</p>
+				<p>- Sobrevivente da guerra santa do século XVIII.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1990</div>
 		</div>
-		<div class="event">
+    <div id="modal7" class="modal hidden">
+      <h4>Guardião dos 5 picos de Rozan.</h4>
+      <img class="img-modal" src="src/imagens/popovers/mestreanciao.png" alt="conserto das armaduras">
+      <h4 class="titulo2">Sobrevivente da guerra santa do século XVIII.</h4>
+      <img class="img-modal" src="src/imagens/popovers/dohkoeshion.png" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+		
+    
+    <div class="event" data-modal-id="modal8">
 			<div class="content">
 				<h3>Milo de Escorpião</h3>
-				<p>Técnica mortal Agulha Escarlate, usada para testar e desafiar Seiya.</p>
-				<p>Defesa do Santuário contra os Espectros.</p>
+				<p>- Batalha contra Yoga na batalha das 12 casas.</p>
+				<p>- Defesa do Santuário contra os Espectros.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1990</div>
 		</div>
-    <div class="event">
+    <div id="modal8" class="modal hidden">
+      <h4>Confronto contra Yoga na batalha das 12 casas.</h4>
+      <img class="img-modal" src="https://images6.alphacoders.com/680/thumb-1920-680871.png">
+      <h4 class="titulo2">Defesa do Santuário contra os Espectros.</h4>
+      <img class="img-modal" src="https://i.pinimg.com/originals/8e/f0/a5/8ef0a5b196414d03dba57304519c56ca.gif" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+   
+    <div class="event" data-modal-id="modal9">
 			<div class="content">
 				<h3>Aiolos de Sagitário</h3>
-				<p>Salvamento da bebê Atena, traindo o Santuário para protegê-la.</p>
-				<p>Sacrifício para salvar Atena.</p>
+				<p>- Sacrifício para salvar Atena.</p>
+				<p>- Autor do golpe contra o muro das lamentações.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1973</div>
 		</div>
-		<div class="event">
+    <div id="modal9" class="modal hidden">
+      <h4>Sacrifício para salvar a bebê Atena.</h4>
+      <img class="img-modal" src="src/imagens/popovers/ailossag.png" alt="conserto das armaduras">
+      <h4 class="titulo2">Autor do golpe contra o muro das lamentações.</h4>
+      <img class="img-modal" src="https://j.gifs.com/73WJvG.gif" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+
+		<div class="event" data-modal-id="modal10">
 			<div class="content">
 				<h3>Shura de Capricórnio</h3>
-				<p>Golpe mortal Excalibur, a espada imbatível.</p>
-				<p>Sacrifício para salvar Shiryu na Saga de Hades.</p>
+				<p>- Golpe mortal Excalibur, a espada imbatível.</p>
+				<p>- Combate contra Shiryu na casa de capricórnio.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1973</div>
 		</div>
-		<div class="event">
+    <div id="modal10" class="modal hidden">
+      <h4>Golpe mortal Excalibur, a espada imbatível.</h4>
+      <img class="img-modal" src="https://c.tenor.com/LTi_V_4SVoQAAAAC/tenor.gif" alt="conserto das armaduras">
+      <h4 class="titulo2">Combate contra Shiryu na casa de capricórnio.</h4>
+      <img class="img-modal" src="https://i.pinimg.com/originals/9d/c7/c4/9dc7c4a6ab20d67c1296bb5e881bf27d.png" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+
+
+		<div class="event" data-modal-id="modal11">
 			<div class="content">
 				<h3>Camus de Aquário</h3>
-				<p>Técnica extrema Execução Aurora, que congela tudo ao seu redor.</p>
-				<p>Luta contra os Espectros e seu sacrifício na Saga de Hades.</p>
+				<p>- Técnica Execução Aurora.</p>
+				<p>- Confronto com Yoga na batalha das 12 casas.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1986</div>
 		</div>
-		
-		<div class="event">
+		 <div id="modal11" class="modal hidden">
+      <h4>Confronto com Yoga na batalha das 12 casas.</h4>
+      <img class="img-modal" src="https://giffiles.alphacoders.com/185/185992.gif" alt="conserto das armaduras">
+      <h4 class="titulo2">Técnica extrema Execução Aurora, que congela tudo ao seu redor.</h4>
+      <img class="img-modal" src="https://pa1.aminoapps.com/6738/6f518326b8ebff0d8d2cf0af62662abd88d5afcb_hq.gif" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+
+
+		<div class="event" data-modal-id="modal12">
 			<div class="content">
 				<h3>Afrodite de Peixes</h3>
-				<p>Uso das Rosas Demoníacas (Piranhas e Sangrentas) como ataque mortal.</p>
-        <p>Defesa do Santuário durante a Guerra Santa.</p>
+				<p>- Uso das Rosas Demoníacas como ataque mortal.</p>
+        <p>- Confronto contra Shun na batalha das 12 casas.</p>
+        <button class="detalhes">Detalhes</button>
 			</div>
 			<div class="year">Ano 1986</div>
 		</div>
-		<!-- Adicione mais eventos conforme necessário -->
-	</section>	
-  <!--   <footer>
-      <img
-        src="/src/imagens/imagens cdz/10f7331f375c09f30f61fc5fde00e98e.jpg"
-        alt="imagem dos 12"
-      />
-    </footer> -->
-    <script>
-      document.querySelectorAll('.event').forEach(event => {
-  event.addEventListener('click', () => {
-    console.log("Clique detectado no evento");
-    const content = event.querySelector('.content');
-    content.classList.toggle('active');
-  });
-});
-
-    </script>
+		 <div id="modal12" class="modal hidden">
+      <h4>Uso das Rosas Demoníacas como ataque mortal.</h4>
+      <img class="img-modal" src="https://64.media.tumblr.com/747370665c56deccc01c99cba4b9c6ed/tumblr_p07htywZtY1wyqc5ho2_r1_500.gif" alt="conserto das armaduras">
+      <h4 class="titulo2">Confronto contra Shun na batalha das 12 casas.</h4>
+      <img class="img-modal" src="https://64.media.tumblr.com/49d0a1c2ecccf1e85348dcd50c329638/tumblr_nry68hfkc81uvdnoto1_500.gifv" alt="gif de crystal">
+      <button class="fechar">Fechar</button>
+    </div>
+	</section>
+  
     
-    <script src="./src/js/index.js"></script>
+    
+
+    <footer>
+      <ul class="wrapper">
+    
+        <li class="icon linkedin">
+          <a href="https://www.linkedin.com/in/everton-diego-163b49194/" target="_blank">
+            <span class="tooltip">Linkedin</span>
+            <span><i class="fab fa-linkedin"></i></span>
+          </a>
+        </li>
+        <li class="icon instagram">
+          <a href="https://www.instagram.com/diegonotreve/" target="_blank"> 
+            <span class="tooltip">Instagram</span>
+            <span><i class="fab fa-instagram"></i></span>
+          </a>
+        </li>
+        <li class="icon github">
+          <a href="https://github.com/DiegoNotreve" target="_blank">
+            <span class="tooltip">Github</span>
+            <span><i class="fab fa-github"></i></span>
+          </a>
+        </li>
+     
+      
+    </ul>
+      <p>&copy; Todos os direitos reservados | Desenvolvido por <a href="https://www.instagram.com/diegonotreve/" target="_blank">@Diegonotreve</a> </p> 
+
+    </footer>
+    
+    
+    <script src="./src/js/index.js" defer></script>
   </body>
 </html>

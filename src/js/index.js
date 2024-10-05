@@ -80,3 +80,27 @@ function desativarBotaoSelecionado() {
 }
 
 
+// Seleciona todos os botões "Fechar"
+const closeButtons = document.querySelectorAll('.fechar');
+
+// Função para fechar o modal
+closeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const modal = button.closest('.modal'); // Encontra o modal mais próximo
+        modal.classList.add('hidden'); // Adiciona a classe 'hidden' para esconder o modal
+    });
+});
+
+// Seleciona todos os botões "Detalhes"
+const detailsButtons = document.querySelectorAll('.detalhes');
+
+// Adiciona um ouvinte de eventos para cada botão "Detalhes"
+detailsButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const modalId = button.closest('.event').getAttribute('data-modal-id'); // Pega o ID do modal correspondente
+        const modal = document.getElementById(modalId); // Seleciona o modal correspondente
+        modal.classList.remove('hidden'); // Remove a classe 'hidden' para mostrar o modal
+    });
+});
+
+
