@@ -552,12 +552,64 @@ li.icon a {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Estilos responsivos para telas de 1020px ou menos */
-/* @media (max-width: 1020px) {
+
+@media screen and (max-width: 1200px) {
 	.conteudo {
 	  flex-direction: column; 
 	  align-items: center; 
-	
+  }
+
+  .imgcdz img {
+    height: auto;
+    width: 150px;
+    position: absolute;
+    left: 55%;
+    transform: translateY(100%);
+  }
+
+  .botoes-carrossel {
+    right: 5%;
+    position: relative;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d61d;
+    padding: 10px;
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  .descricao {
+    width: 50%;
+    left: 0;
+    margin: 10px;
+    font-size: 1rem;
+    overflow: auto;
+  }
+ 
+
+  
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .div2 {
+    display: flex;
+    margin: 0 25px; 
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+    width: 80%;
+    
+  }
+
+ 
 
 
 	.informacoes {
@@ -576,8 +628,8 @@ li.icon a {
 		align-items: center;
 	}
 
-	.descricao{
-		
+	.descricao {
+
 		text-align: center;
 	}
 
@@ -585,5 +637,5 @@ li.icon a {
 	  margin-top: 20px; 
 	  gap: 15px;
 	}
-  }
-} */
+  
+} 

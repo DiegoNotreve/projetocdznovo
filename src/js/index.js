@@ -80,6 +80,9 @@ function desativarBotaoSelecionado() {
 }
 
 
+
+
+
 // Seleciona todos os botões "Fechar"
 const closeButtons = document.querySelectorAll('.fechar');
 
