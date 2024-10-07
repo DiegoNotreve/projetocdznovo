@@ -29,25 +29,25 @@ const botoesCarrossel = document.querySelectorAll(".botao");
 const imagens = document.querySelectorAll(".imagem");
 const informacoes = document.querySelectorAll(".informacoes");
 
-// - passo 2 - dar um jeito de identificar o clique do usuário no botão
+
 botoesCarrossel.forEach((botao, indice) => {
   botao.addEventListener("click", () => {
-    // - passo 3 - desmarcar o botão selecionado anterior
+   
     desativarBotaoSelecionado();
 
-    // 	- passo 4 - marcar o botão clicado como se estivesse selecionado
+   
     marcarBotaoSelecionado(botao);
 
-    // - passo 5 - esconder a imagem anteriormente selecionada
+ 
     esconderImagemAtiva();
 
-    // - passo 6 - fazer aparecer a imagem correspondente ao botão clicado
+    
     mostrarImagemDeFundo(indice);
 
-    // - passo 7 - esconder a informação do dragão anteriormente selecionado
+   
     esconderInformacoesAtivas();
 
-    // - passo 8 - mostrar a informação do dragão referente ao botão clicado
+    
     mostrarInformacoes(indice);
   });
 });

@@ -110,7 +110,7 @@ body {
 }
 
 .botoes-carrossel .botao:focus {
-  outline: 2px solid #ecfd02; /* Ou outra cor que contraste */
+  outline: 2px solid #ecfd02; 
 }
 
 .imagem {
@@ -316,11 +316,11 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 90%; /* Para garantir responsividade em telas menores */
+  max-width: 90%; 
   max-height: 100vh; /* Evita que o modal ultrapasse a altura da tela */
   background-image: url('https://www.freecodecamp.org/news/content/images/2021/04/image-257.png');
   background-size: cover;
-  background-position: center; /* Centraliza o background */
+  background-position: center; 
   position: fixed;
   top: 50%;
   left: 50%;
@@ -352,7 +352,7 @@ h4 {
 }
 
 button.fechar {
-  margin-top: 10px; /* Adiciona espaço acima do botão */
+  margin-top: 10px; 
   padding: 5px 20px;
   background-color: #d3d61d;
   border: none;
@@ -362,7 +362,7 @@ button.fechar {
 }
 
 button.detalhes {
-  margin-top: 10px; /* Adiciona espaço acima do botão */
+  margin-top: 10px; 
   padding: 5px 20px;
   background-color: #050505;
   border: none;
